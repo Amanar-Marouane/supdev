@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://supdev.me/sitemap.xml
 
 # Disallow backup or temporary files
 Disallow: /*.bak$
