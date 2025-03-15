@@ -1,0 +1,213 @@
+.hero-section {
+    background-image: linear-gradient(rgba(156, 175, 199, 0.85), rgba(156, 175, 199, 0.85)), url('../assets/images/hero/hero-background-development-maroc.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.hero-section>div {
+    position: relative;
+    z-index: 2;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top.visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header {
+    transition: all 0.3s ease;
+}
+
+header.header-scrolled {
+    background-color: white !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.service-card {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: #e5e7eb;
+}
+
+.service-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.6s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Team card animations */
+.team-member-card {
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(59, 130, 246, 0.7) 0%, rgba(59, 130, 246, 0) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.team-member-card:hover::before {
+    opacity: 0.3;
+}
+
+/* Client logos animation */
+.client-logo {
+    transition: all 0.3s ease;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.client-logo:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Navigation link transitions */
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.text-blue-600::after {
+    width: 100%;
+}
+
+/* Form input animations */
+.form-input {
+    transition: all 0.3s ease-in-out;
+}
+
+.form-input:focus {
+    transform: translateY(-2px);
+}
+
+.submit-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.submit-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+}
+
+.submit-button:hover::after {
+    left: 100%;
+}
+
+/* CTA button animation */
+.cta-button {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: height 0.3s ease;
+    z-index: -1;
+}
+
+.cta-button:hover::before {
+    height: 100%;
+}
+
+/* Testimonial avatar animation */
+.testimonial-avatar {
+    transition: all 0.3s ease;
+}
+
+.testimonial-avatar:hover {
+    transform: scale(1.1) rotate(5deg);
+    border-color: #3b82f6;
+}
+
+/* Counter animation */
+.counter {
+    display: inline-block;
+    position: relative;
+}
+
+/* Contact info item animation */
+.contact-item {
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+}
+
+/* Global transitions */
+* {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
