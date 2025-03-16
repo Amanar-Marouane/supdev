@@ -1,5 +1,5 @@
 .hero-section {
-    background-image: linear-gradient(rgba(156, 175, 199, 0.85), rgba(156, 175, 199, 0.85)), url('../assets/images/hero/hero-background-development-maroc.jpg');
+    background-image: linear-gradient(rgba(156, 175, 199, 0.5), rgba(156, 175, 199, 0.5)), url('../assets/images/hero/hero-background-development-maroc.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -13,7 +13,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 1;
 }
 
